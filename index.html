@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <title>Project-3-Bootstrap</title>
+  </head>
+  <body class="bg-dark-subtle">
+    <!-- 1. Navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      style="background-color: #a8b5c1"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./imgs/logo.jpg"
+            alt="Pyramids image"
+            width="50"
+            height="50"
+            style="border-radius: 50%"
+          />
+        </a>
+        <span
+          class="logo-text ms-3 pe-2 h3 text-primary"
+          style="border-right: solid 0.5px grey"
+          >Egypt</span
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-2 me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Trips
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Cairo</a></li>
+                <li><a class="dropdown-item" href="#">Alex</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Luxor</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Aswan</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Port Said</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">More ...</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-primary me-3" type="submit">Search</button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form>
+            <div class="container">
+              <div class="m-3">
+                <label for="emailInput" class="form-label">Email address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="example@gmail.com"
+                  required
+                />
+              </div>
+              <div class="m-3">
+                <label for="passwordInput" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="passwordInput"
+                  required
+                />
+              </div>
+              <div class="form-check form-switch ms-3 mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label class="form-check-label" for="flexSwitchCheckDefault"
+                  >Remember me</label
+                >
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+              <button type="submit" class="btn btn-primary">Login</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fixed Icons -->
+    <div class="icons d-flex flex-column align-items-end h-100 w-100">
+      <a href="#"
+        ><i class="fab fa-facebook-square pb-3 pe-3" style="color: #003060"></i
+      ></a>
+      <a href="#"
+        ><i class="fab fa-whatsapp-square pb-3 pe-3" style="color: #003060"></i
+      ></a>
+      <a href="#"
+        ><i class="fab fa-linkedin pb-3 pe-3" style="color: #003060"></i
+      ></a>
+      <a href="#"
+        ><i class="fab fa-instagram-square pb-3 pe-3" style="color: #003060"></i
+      ></a>
+    </div>
+
+    <!-- 2.Carousel -->
+    <div class="carousel-container m-1">
+      <div
+        id="carousel-indicator"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel-indicator"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-indicator"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-indicator"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-indicator"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imgs/cairo.jpg" class="d-block w-100" alt="cairo" />
+            <div class="carousel-caption bg-secondary bg-opacity-75">
+              <h2 class="fs-1">Cairo</h2>
+              <p>Capital of Egypt</p>
+              <button class="btn btn-primary">Visit Us</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/aswan.jpg" class="d-block w-100" alt="aswan" />
+            <div class="carousel-caption bg-secondary bg-opacity-75">
+              <h2 class="fs-1">Aswan</h2>
+              <p>Tourist City</p>
+              <button class="btn btn-primary">Visit Us</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./imgs/portsaid.jpg"
+              class="d-block w-100"
+              alt="port-said"
+            />
+            <div class="carousel-caption bg-secondary bg-opacity-75">
+              <h2 class="fs-1">Port Said</h2>
+              <p>We love this city!</p>
+              <button class="btn btn-primary">Visit Us</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/Luxor.jpg" class="d-block w-100" alt="luxor" />
+            <div class="carousel-caption bg-secondary bg-opacity-75">
+              <h2 class="fs-1">Luxor</h2>
+              <p>Tourist City</p>
+              <button class="btn btn-primary">Visit Us</button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel-indicator"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel-indicator"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <div class="m-3">
+          <h2 class="text-primary">Welcome</h2>
+          <p>
+            Are you planning to visit Egypt? We offer the ultimate tour in
+            Egypt, covering Cairo Alex. From one day trip to a 10 day dream
+            vacation. we will take care of all your needs. Book hotels 24/7
+            customer service
+          </p>
+          <button class="btn btn-primary">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <!-- 3.Destinations -->
+    <div class="destinations">
+      <div
+        class="m-1 p-5 bg-gradient"
+        style="
+          background-color: #4fa3d4;
+          border: 2px solid #4fa3d4;
+          border-radius: 5px;
+        "
+      >
+        <h2 class="text-center">Popular destinations in Egypt</h2>
+      </div>
+
+      <!-- Accordion -->
+      <div class="m-1 mt-3">
+        <div
+          class="accordion accordion-flush"
+          id="accordionFlushExample"
+          style="border: 2px solid #4fa3d4; border-radius: 5px"
+        >
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold fs-4 bg-gradient"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                CAIRO CITY
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body bg-black text-white">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, est perferendis quod libero sunt in aperiam rem
+                accusantium tenetur cumque nobis. Et, quod praesentium?
+                Temporibus, quibusdam dolores? Obcaecati at ex ullam et facere
+                necessitatibus consectetur architecto quo expedita soluta
+                numquam quisquam, ea, possimus reiciendis, dolor a molestias
+                delectus non distinctio!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold fs-4 bg-gradient"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                ALEX CITY
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body bg-black text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Recusandae, tempora harum illum laborum accusantium dolore
+                consequatur ipsum rerum! Laudantium illum illo nulla suscipit
+                quod accusamus molestias, harum itaque non explicabo atque
+                perferendis tempore dolore eveniet! Enim, illo consectetur?
+                Nobis magnam aut accusantium magni quibusdam eum similique
+                corporis iure explicabo pariatur.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold fs-4 bg-gradient"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                LUXOR CITY
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body bg-black text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Placeat enim temporibus delectus ullam expedita exercitationem
+                dolore, dignissimos itaque. Magni non aliquid neque porro ad
+                sequi maxime officia similique ipsam omnis deleniti praesentium
+                amet blanditiis, iusto, quas iste, error deserunt. Pariatur odit
+                quisquam corporis minus perferendis cupiditate eligendi est eos
+                qui.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold fs-4 bg-gradient"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                PORT SAID CITY
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body bg-black text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Placeat enim temporibus delectus ullam expedita exercitationem
+                dolore, dignissimos itaque. Magni non aliquid neque porro ad
+                sequi maxime officia similique ipsam omnis deleniti praesentium
+                amet blanditiis, iusto, quas iste, error deserunt. Pariatur odit
+                quisquam corporis minus perferendis cupiditate eligendi est eos
+                qui.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- 4. Translate -->
+    <div class="translate">
+      <div class="m-1">
+        <h2 class="p-4 bg-gradient">Translate From Arabic to English</h2>
+        <div class="translate-area p-4 bg-gradient">
+          <p class="fs-4 fw-bold">
+            Write and Translate <a href="#">Press Here</a>
+          </p>
+          <button
+            class="btn btn-primary mb-3"
+            data-bs-toggle="modal"
+            data-bs-target="#text-copied-modal"
+          >
+            Copy
+            <span class="tooltip-text">Copy to clipboard</span>
+            <span class="tooltip-text-copied">Copied</span>
+          </button>
+          <br />
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="5"
+            placeholder="Translate..."
+          ></textarea>
+
+          <div
+            class="modal fade"
+            id="text-copied-modal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">Text Copied!</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /translate -->
+    <hr />
+
+    <!-- 5. Translate -->
+    <div class="translate">
+      <div class="m-1">
+        <h2 class="p-4 bg-gradient">Translate From Arabic to French</h2>
+        <div class="translate-area p-4 bg-gradient">
+          <p class="fs-4 fw-bold">
+            Write and Translate <a href="#">Press Here</a>
+          </p>
+          <button
+            class="btn btn-primary mb-3"
+            data-bs-toggle="modal"
+            data-bs-target="#text-copied-modal"
+          >
+            Copy
+            <span class="tooltip-text">Copy to clipboard</span>
+            <span class="tooltip-text-copied">Copied</span>
+          </button>
+          <br />
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="5"
+            placeholder="Translate..."
+          ></textarea>
+
+          <div
+            class="modal fade"
+            id="text-copied-modal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">Text Copied!</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /translate -->
+    <hr />
+
+    <!-- 6. Translate -->
+    <div class="translate">
+      <div class="m-1">
+        <h2 class="p-4 bg-gradient">Translate From Arabic to German</h2>
+        <div class="translate-area p-4 bg-gradient">
+          <p class="fs-4 fw-bold">
+            Write and Translate <a href="#">Press Here</a>
+          </p>
+          <button
+            class="btn btn-primary mb-3"
+            data-bs-toggle="modal"
+            data-bs-target="#text-copied-modal"
+          >
+            Copy
+            <span class="tooltip-text">Copy to clipboard</span>
+            <span class="tooltip-text-copied">Copied</span>
+          </button>
+          <br />
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="5"
+            placeholder="Translate..."
+          ></textarea>
+
+          <div
+            class="modal fade"
+            id="text-copied-modal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">Text Copied!</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /translate -->
+    <hr />
+
+    <!-- 7.Museum overlay section -->
+    <div class="museum">
+      <div class="overlay"></div>
+    </div>
+
+    <!-- 8. Destination Cards -->
+    <div class="destinations-cards">
+      <div class="m-1">
+        <h2
+          class="text-center p-3 bg-gradient"
+          style="
+            background-color: #4fa3d4;
+            border: 2px solid #4fa3d4;
+            border-radius: 5px;
+          "
+        >
+          Popular destinations in Egypt
+        </h2>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-4 col-lg-4 mb-3">
+              <div class="card">
+                <img src="./imgs/cairo.png" class="card-img-top" alt="Cairo" />
+                <div class="card-body">
+                  <h5 class="card-title">Cairo</h5>
+                  <p class="card-text text-muted">Capital of Egypt</p>
+                  <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 mb-3">
+              <div class="card">
+                <img
+                  src="./imgs/citadel_alex.jpg"
+                  class="card-img-top"
+                  alt="Alexandria"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Alexandria</h5>
+                  <p class="card-text text-muted">The bride of Mediterranean</p>
+                  <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 mb-3">
+              <div class="card">
+                <img
+                  src="./imgs/luxor-2.jpg"
+                  class="card-img-top"
+                  alt="Luxor"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Luxor</h5>
+                  <p class="card-text text-muted">Capital of Ancient Kingdom</p>
+                  <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 mb-3">
+              <div class="card">
+                <img
+                  src="./imgs/aswan-2.jpg"
+                  class="card-img-top"
+                  alt="Aswan"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">aswan</h5>
+                  <p class="card-text text-muted">
+                    Nubian City of South of Egypt
+                  </p>
+                  <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 mb-3">
+              <div class="card">
+                <img
+                  src="./imgs/Hurghada.jpg"
+                  class="card-img-top"
+                  alt="Hurghada"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Hurghada</h5>
+                  <p class="card-text text-muted">City in Red City</p>
+                  <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 mb-3">
+              <div class="card">
+                <img
+                  src="./imgs/sharm.jpg"
+                  class="card-img-top"
+                  alt="sharm el sheikh"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">sharm el sheikh</h5>
+                  <p class="card-text text-muted">Beautiful city in Egypt</p>
+                  <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /row -->
+          <div class="last-cards row justify-content-center">
+            <div class="col-12 col-md-4 col-lg-4 mb-3">
+              <div class="card">
+                <img src="./imgs/siwa.jpg" class="card-img-top" alt="Siwa" />
+                <div class="card-body">
+                  <h5 class="card-title">siwa</h5>
+                  <p class="card-text">Sunset Oasis</p>
+                  <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 mb-3">
+              <div class="card">
+                <img src="./imgs/Sinai.jpg" class="card-img-top" alt="Sinai" />
+                <div class="card-body">
+                  <h5 class="card-title">sinai</h5>
+                  <p class="card-text">Peninsula in Egypt</p>
+                  <a href="#" class="btn btn-primary">Know More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /last-cards -->
+        </div>
+        <!-- /container -->
+      </div>
+    </div>
+
+    <!-- 9.Museum overlay section -->
+    <div class="museum">
+      <div class="overlay"></div>
+    </div>
+
+    <!-- 10.Destinations -->
+    <div class="destinations-cards">
+      <div class="m-1">
+        <h2
+          class="text-center p-3 bg-gradient"
+          style="
+            background-color: #4fa3d4;
+            border: 2px solid #4fa3d4;
+            border-radius: 5px;
+          "
+        >
+          Popular destinations in Egypt
+        </h2>
+        <div class="container">
+          <div class="cards mt-5 row justify-content-center">
+            <div
+              class="dest-card mb-3 me-lg-5 col-lg-3 col-sm-12"
+              style="background-image: url(./imgs/downtown.jpg)"
+            >
+              <div class="dest-overlay text-white">
+                <h3>DownTown Cairo</h3>
+                <p><i class="fa-solid fa-clock"></i> November 9 , 2023</p>
+                <img
+                  src="./imgs/downtown.jpg"
+                  alt=""
+                  style="
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    margin-top: 120px;
+                  "
+                />
+                <p class="fs-5">Cairo, Egypt</p>
+              </div>
+            </div>
+            <div
+              class="dest-card mb-3 me-lg-5 col-lg-3 col-sm-12"
+              style="background-image: url(./imgs/alex-citadel.jpg)"
+            >
+              <div class="dest-overlay text-white">
+                <h3>Alexandria Citadel</h3>
+                <p><i class="fa-solid fa-clock"></i> January 2 , 2024</p>
+                <img
+                  src="./imgs/alex-citadel.jpg"
+                  alt=""
+                  style="
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    margin-top: 120px;
+                  "
+                />
+                <p class="fs-5">Alexandria, Egypt</p>
+              </div>
+            </div>
+            <div
+              class="dest-card mb-3 col-lg-3 col-sm-12"
+              style="background-image: url(./imgs/nile.jpg)"
+            >
+              <div class="dest-overlay text-white">
+                <h3>Nile</h3>
+                <p><i class="fa-solid fa-clock"></i> October 15 , 2024</p>
+                <img
+                  src="./imgs/nile.jpg"
+                  alt=""
+                  style="
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    margin-top: 120px;
+                  "
+                />
+                <p class="fs-5">Cairo, Egypt</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <!-- 11.News -->
+    <div class="news mt-4">
+      <div class="container">
+        <h2 class="text-center text-primary">Egypt News</h2>
+        <div class="news-box mt-5 mb-5">
+          <div class="news-box-content">
+            <img
+              class="img-right"
+              src="./imgs/cairo.jpg"
+              width="50%"
+              height="100%"
+            />
+
+            <div class="news-box-container">
+              <h2>Podcast Title</h2>
+              <p style="font-size: 12px">
+                <i class="fa-solid fa-calendar-days"></i> Sat, May 25th 2024
+              </p>
+              <span class="news-box-hr"></span>
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequuntur accusantium rerum recusandae repellat ab quae
+                dolorem, nulla accusamus iste qui vero aliquid neque in incidunt
+                minus quibusdam mollitia praesentium ratione nisi et quod
+                quaerat perferendis? Alias facere odit, impedit voluptatibus
+                recusandae enim harum autem laudantium porro vel distinctio,
+                excepturi asperiores.
+              </p>
+              <div class="news-box-btns mt-5">
+                <button class="btn btn-primary" style="cursor: auto">
+                  <i class="fa-solid fa-tag"></i> Poadcast
+                </button>
+                <button class="btn btn-primary" style="cursor: auto">
+                  <i class="fa-solid fa-clock"></i> 50 mins.
+                </button>
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-play"></i> Play Episode
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news-box mt-5 mb-5">
+          <div class="news-box-content">
+            <img
+              class="img-left"
+              src="./imgs/cairo.jpg"
+              width="50%"
+              height="100%"
+            />
+
+            <div class="news-box-container content-right">
+              <h2>Podcast Title</h2>
+              <p style="font-size: 12px">
+                <i class="fa-solid fa-calendar-days"></i> Mon, Nov 4th 2024
+              </p>
+              <span class="news-box-hr"></span>
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequuntur accusantium rerum recusandae repellat ab quae
+                dolorem, nulla accusamus iste qui vero aliquid neque in incidunt
+                minus quibusdam mollitia praesentium ratione nisi et quod
+                quaerat perferendis? Alias facere odit, impedit voluptatibus
+                recusandae enim harum autem laudantium porro vel distinctio,
+                excepturi asperiores.
+              </p>
+              <div class="news-box-btns mt-5">
+                <button class="btn btn-primary" style="cursor: auto">
+                  <i class="fa-solid fa-tag"></i> Poadcast
+                </button>
+                <button class="btn btn-primary" style="cursor: auto">
+                  <i class="fa-solid fa-clock"></i> 50 mins.
+                </button>
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-play"></i> Play Episode
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news-box mt-5 mb-5">
+          <div class="news-box-content">
+            <img
+              class="img-right"
+              src="./imgs/cairo.jpg"
+              width="50%"
+              height="100%"
+            />
+
+            <div class="news-box-container">
+              <h2>Podcast Title</h2>
+              <p style="font-size: 12px">
+                <i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2024
+              </p>
+              <span class="news-box-hr"></span>
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequuntur accusantium rerum recusandae repellat ab quae
+                dolorem, nulla accusamus iste qui vero aliquid neque in incidunt
+                minus quibusdam mollitia praesentium ratione nisi et quod
+                quaerat perferendis? Alias facere odit, impedit voluptatibus
+                recusandae enim harum autem laudantium porro vel distinctio,
+                excepturi asperiores.
+              </p>
+              <div class="news-box-btns mt-5">
+                <button class="btn btn-primary" style="cursor: auto">
+                  <i class="fa-solid fa-tag"></i> Poadcast
+                </button>
+                <button class="btn btn-primary" style="cursor: auto">
+                  <i class="fa-solid fa-clock"></i> 50 mins.
+                </button>
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-play"></i> Play Episode
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news-box mt-5 mb-5">
+          <div class="news-box-content">
+            <img
+              class="img-left"
+              src="./imgs/cairo.jpg"
+              width="50%"
+              height="100%"
+            />
+
+            <div class="news-box-container content-right">
+              <h2>Podcast Title</h2>
+              <p style="font-size: 12px">
+                <i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2024
+              </p>
+              <span class="news-box-hr"></span>
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequuntur accusantium rerum recusandae repellat ab quae
+                dolorem, nulla accusamus iste qui vero aliquid neque in incidunt
+                minus quibusdam mollitia praesentium ratione nisi et quod
+                quaerat perferendis? Alias facere odit, impedit voluptatibus
+                recusandae enim harum autem laudantium porro vel distinctio,
+                excepturi asperiores.
+              </p>
+              <div class="news-box-btns mt-5">
+                <button class="btn btn-primary" style="cursor: auto">
+                  <i class="fa-solid fa-tag"></i> Poadcast
+                </button>
+                <button class="btn btn-primary" style="cursor: auto">
+                  <i class="fa-solid fa-clock"></i> 50 mins.
+                </button>
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-play"></i> Play Episode
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12. Join Us -->
+    <div class="joinUs">
+      <div class="container">
+        <h2 class="text-center text-primary pb-4 text-uppercase">Join Us</h2>
+        <div class="row justify-content-center gap-5">
+          <div class="join-box col-12 col-sm-6 col-md-4 col-lg-2 text-center">
+            <h3 class="pt-3 text-primary"><a href="#">Subscribe Now</a></h3>
+            <a href="#">
+              <i class="fab fa-youtube mt-3 mb-3" style="color: red"></i>
+            </a>
+            <h4 class="text-primary"><a href="#">Go to Link</a></h4>
+          </div>
+          <div class="join-box col-12 col-sm-6 col-md-4 col-lg-2 text-center">
+            <h3 class="pt-3 text-primary"><a href="#">Join</a></h3>
+            <a href="#">
+              <i
+                class="fab fa-whatsapp-square mt-3 mb-3"
+                style="color: green"
+              ></i>
+            </a>
+            <h4 class="text-primary"><a href="#">Go to Link</a></h4>
+          </div>
+          <div class="join-box col-12 col-sm-6 col-md-4 col-lg-2 text-center">
+            <h3 class="pt-3 text-primary"><a href="#">Like the page</a></h3>
+            <a href="#">
+              <i class="fab fa-linkedin mt-3 mb-3" style="color: #0a66c2"></i>
+            </a>
+            <h4 class="text-primary"><a href="#">Go to Link</a></h4>
+          </div>
+          <div class="join-box col-12 col-sm-6 col-md-4 col-lg-2 text-center">
+            <h3 class="pt-3 text-primary"><a href="#">Follow</a></h3>
+            <a href="#">
+              <i
+                class="fab fa-facebook-square mt-3 mb-3"
+                style="color: #0866ff"
+              ></i>
+            </a>
+            <h4 class="text-primary"><a href="#">Go to Link</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13. Footer -->
+    <footer class="mt-5">
+      <div class="container">
+        <div class="footer-box row">
+          <div class="footer-content col-lg-4 col-sm-12 text-center">
+            <hr class="footer-line" />
+            <img
+              src="./imgs/logo.jpg"
+              alt=""
+              width="70px"
+              height="70px"
+              style="border-radius: 50%"
+            />
+            <span class="ps-3 fs-4">Good Company</span>
+            <hr class="footer-line" />
+            <p>Tel: 000-000-000</p>
+            <p>Address: Egypt</p>
+            <p>Fax: 000-000-000</p>
+          </div>
+          <!-- footer-content -->
+          <div class="footer-content col-lg-4 col-sm-12 text-center">
+            <hr class="footer-line" />
+            <img
+              src="./imgs/logo.jpg"
+              alt=""
+              width="70px"
+              height="70px"
+              style="border-radius: 50%"
+            />
+            <span class="ps-3 fs-4">Important links</span>
+            <hr class="footer-line" />
+            <p><a href="#">Visit Us</a></p>
+            <p><a href="#">Take alook</a></p>
+            <p><a href="#">Your Health is more important</a></p>
+          </div>
+          <!-- footer-content -->
+          <div class="footer-content col-lg-4 col-sm-12 text-center">
+            <hr class="footer-line" />
+            <img
+              src="./imgs/logo.jpg"
+              alt=""
+              width="70px"
+              height="70px"
+              style="border-radius: 50%"
+            />
+            <span class="ps-3 fs-4">Vision</span>
+            <hr class="footer-line" />
+            <p>Services for all</p>
+            <p>Provide best services</p>
+            <p>You will be better than before</p>
+          </div>
+          <!-- footer-content -->
+          <hr style="width: 100%; height: 3px; background-color: #fff" />
+          <p class="text-uppercase text-center fs-5">
+            copyright &#169; 2024 all right reserved by michael
+          </p>
+          <hr
+            style="width: 100%; height: 3px; background-color: #fff"
+            class="mb-5"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
