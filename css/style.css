@@ -296,6 +296,9 @@ a {
   .content-right {
     margin-left: 0 !important;
   }
+  .news-box-container {
+    padding: 20px;
+  }
 }
 
 .content-right {
@@ -312,6 +315,11 @@ a {
   border-radius: 10px;
 }
 
+@media (max-width: 900px) {
+  .join-box {
+    width: 50% !important;
+  }
+}
 .footer-line {
   /* width: 400px; */
   height: 3px;
