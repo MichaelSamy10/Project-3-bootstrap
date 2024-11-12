@@ -274,7 +274,11 @@ a {
 .news-box-container {
   padding: 30px;
 }
-
+@media (max-width: 430px) {
+  .news-box-btns button:nth-child(3) {
+    margin-top: 5px;
+  }
+}
 @media (max-width: 900px) {
   .news-box-content {
     display: flex;
@@ -297,7 +301,7 @@ a {
     margin-left: 0 !important;
   }
   .news-box-container {
-    padding: 10px;
+    padding: 25px;
   }
 }
 
