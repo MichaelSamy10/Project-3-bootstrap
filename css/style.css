@@ -10,7 +10,6 @@ a {
   border: 1px solid grey !important;
   border-radius: 6px !important;
 }
-
 .dropdown-toggle:hover::first-letter {
   color: #4fa3d4;
 }
@@ -66,12 +65,12 @@ a {
 .accordion-button {
   background-color: #4fa3d4 !important;
 }
-
 @media (max-width: 900px) {
   .carousel-inner {
     height: 700px;
   }
 }
+
 /* 4. Translate section */
 .translate h2 {
   text-align: center;
@@ -114,34 +113,14 @@ a {
   visibility: visible;
   opacity: 1;
 }
-.tooltip-text-copied {
-  visibility: hidden;
-  width: 120px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 5px;
-  border-radius: 4px;
-  position: absolute;
-  bottom: -35px;
-  left: 120px;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-  font-size: 14px;
-  white-space: nowrap;
-}
 .btn:focus .tooltip-text {
   visibility: hidden;
   opacity: 0;
 }
-.btn:focus .tooltip-text-copied {
-  visibility: visible;
-  opacity: 1;
-}
 .translate-area p a {
   color: white;
 }
+
 .museum {
   position: relative;
   background-image: url(../imgs/museum.jpg);
@@ -157,6 +136,7 @@ a {
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
+
 .card-body h5 {
   text-transform: uppercase;
 }
@@ -202,7 +182,6 @@ a {
   transition: 0.7s;
   opacity: 0.3;
 }
-
 .dest-card {
   position: relative;
   background-repeat: no-repeat;
@@ -318,18 +297,16 @@ a {
   font-size: 70px;
   border-radius: 10px;
 }
-
 @media (max-width: 900px) {
   .join-box {
     width: 50% !important;
   }
 }
+
 .footer-line {
-  /* width: 400px; */
   height: 3px;
   background-color: #fff;
 }
-
 footer {
   background-color: #a8b5c1;
 }
